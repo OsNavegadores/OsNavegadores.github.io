@@ -26,15 +26,17 @@
     <a href="planteis.html" style="color: var(--gold); text-decoration: none; font-weight: 700; display: inline-block; margin-bottom: 20px;">← Voltar aos Plantéis</a>
 
     <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 30px; display: flex; flex-wrap: wrap; gap: 30px; align-items: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-      <!-- Foto de Perfil -->
+      
+      <!-- Foto de Perfil do Jogador -->
       <div style="flex: 1; min-width: 260px; max-width: 320px; text-align: center;">
-        <img src="Bafi0.jpg" alt="Bafi0" style="width: 100%; border-radius: 8px; border: 2px solid var(--gold); box-shadow: 0 0 20px var(--gold-glow);">
+        <img src="Bafi0.jpg" alt="Bafi0" style="width: 100%; min-height: 300px; object-fit: cover; border-radius: 8px; border: 2px solid var(--gold); box-shadow: 0 0 20px var(--gold-glow);">
       </div>
 
       <!-- Detalhes do Jogador -->
       <div style="flex: 2; min-width: 280px;">
         <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-          <img src="OsTemplarios.png" alt="Os Templários" style="height: 35px;">
+          <!-- Tenta carregar .png e se falhar mostra o texto -->
+          <img src="OsTemplarios.png" alt="Os Templários" style="height: 35px;" onerror="this.src='OsTemplarios.jpg'">
           <span style="color: var(--cream); font-weight: 800; text-transform: uppercase;">Os Templários</span>
         </div>
 
