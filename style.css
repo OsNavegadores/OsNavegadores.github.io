@@ -52,7 +52,6 @@ footer { text-align: center; padding: 25px; background: #040810; border-top: 1px
 
 @media (max-width: 768px) {
   
-  /* 1. Ajuste Geral de Espaçamentos */
   body {
     padding: 10px;
   }
@@ -62,60 +61,55 @@ footer { text-align: center; padding: 25px; background: #040810; border-top: 1px
     margin: 10px auto !important;
   }
 
-  /* 2. Menu de Navegação Vertical */
+  /* 1. Menu de Navegação */
   nav {
     flex-direction: column;
-    gap: 15px;
-    padding: 15px !important;
+    gap: 12px;
+    padding: 12px 10px !important;
     text-align: center;
+  }
+
+  /* Fix do Logótipo no Header */
+  .nav-brand {
+    font-size: 1.1rem !important;
+  }
+
+  .nav-brand img {
+    height: 35px !important; /* Mantém o logo pequeno */
+    width: auto !important;
   }
 
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px !important;
+    gap: 8px !important;
   }
 
   .nav-links a {
-    font-size: 0.85rem !important;
-    padding: 6px 10px;
+    font-size: 0.8rem !important;
+    padding: 5px 8px;
   }
 
-  /* 3. Títulos e Imagens */
+  /* 2. Títulos */
   h1 {
-    font-size: 1.8rem !important;
+    font-size: 1.7rem !important;
   }
 
   h2 {
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
   }
 
-  img {
-    max-width: 100% !important;
-    height: auto !important;
-  }
-
-  /* 4. Cartões de Jogadores e Notícias */
+  /* 3. Grelha de Notícias e Jogadores */
   .news-grid, 
   .players-grid {
-    grid-template-columns: 1fr !important; /* Força 1 coluna em telemóveis */
+    grid-template-columns: 1fr !important;
     gap: 20px !important;
   }
 
-  /* 5. Tabelas de Jogos e Resultados (Scroll Horizontal Suave) */
-  .match-table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
+  /* 4. Tabelas em Telemóvel */
   .match-table th, 
   .match-table td {
-    padding: 8px 6px !important;
-    font-size: 0.85rem !important;
-  }
-
-  /* Ocultar elementos secundários em mobile se necessário */
-  .hide-on-mobile {
-    display: none !important;
+    padding: 8px 5px !important;
+    font-size: 0.8rem !important;
   }
 }
