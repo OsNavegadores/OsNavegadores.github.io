@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias | Os Navegadores</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&display=swap" rel="stylesheet">
+  <style>
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .news-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      text-decoration: none;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6), 0 0 15px var(--gold-glow);
+    }
+
+    .news-image-wrapper {
+      position: relative;
+      width: 100%;
+      height: 240px;
+      background: #0f172a;
+      overflow: hidden;
+    }
+
+    .news-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: transform 0.3s ease;
+    }
+
+    .news-card:hover .news-image {
+      transform: scale(1.04);
+    }
+
+    .news-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--gold);
+      color: #000;
+      font-weight: 800;
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .news-content {
+      padding: 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .news-date {
+      color: var(--gold);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .news-title {
+      color: var(--cream);
+      font-size: 1.25rem;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 12px;
+    }
+
+    .news-excerpt {
+      color: var(--text-dim);
+      font-size: 0.92rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .news-link {
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <a href="index.html" class="nav-brand">
+      <img src="OsNavegadores_SemFundo.png" alt="Logo">
+      OS NAVEGADORES
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="planteis.html">Plantéis</a></li>
+      <li><a href="palmares.html">Palmarés</a></li>
+      <li><a href="torneios.html">Torneios</a></li>
+      <li><a href="noticias.html" class="active">Notícias</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    
+    <!-- Cabeçalho -->
+    <div style="text-align: center; margin-bottom: 40px;">
+      <h1 style="font-size: 2.8rem; font-weight: 900; color: var(--cream); text-transform: uppercase; margin-bottom: 8px;">Últimas Notícias</h1>
+      <p style="color: var(--text-dim); font-weight: 600;">Acompanha os destaques e conquistas d'Os Navegadores e Templários</p>
+    </div>
+
+    <!-- Grelha de Notícias -->
+    <div class="news-grid">
+
+      <!-- Notícia Única: Bafi0 Campeão IMBA -->
+      <a href="noticia_bafio_imba.html" class="news-card">
+        <div class="news-image-wrapper">
+          <img src="bafio_campeao.jpg" alt="Bafi0 Campeão IMBA" class="news-image" onerror="this.src='Bafi0.jpg'">
+          <span class="news-badge">Conquista</span>
+        </div>
+        <div class="news-content">
+          <div>
+            <div class="news-date">IMBA Champion of Champions</div>
+            <h2 class="news-title">Bafi0 Sagrou-se Campeão Sem Perder um Único Jogo no KO-Stage</h2>
+            <p class="news-excerpt">
+              O atleta d'Os Templários dominou a fase a eliminar do IMBA Champion of Champions, vencendo 3 atletas italianos sem ceder qualquer ponto.
+            </p>
+          </div>
+          <span class="news-link">Ler notícia completa →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <footer>© Os Navegadores — Pokémon GO Portugal</footer>
+</body>
+</html>
