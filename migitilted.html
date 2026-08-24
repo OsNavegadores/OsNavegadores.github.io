@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MigiTilted | Perfil de Jogador</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-brand">
+      <img src="OsNavegadores_SemFundo.png" alt="Logo">
+      OS NAVEGADORES
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="planteis.html" class="active">Plantéis</a></li>
+      <li><a href="palmares.html">Palmarés</a></li>
+      <li><a href="torneios.html">Torneios</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <a href="planteis.html" style="color: var(--gold); text-decoration: none; font-weight: 700; display: inline-block; margin-bottom: 20px;">← Voltar aos Plantéis</a>
+
+    <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 30px; display: flex; flex-wrap: wrap; gap: 30px; align-items: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+      
+      <!-- Placeholder de Foto em Breve -->
+      <div style="flex: 1; min-width: 260px; max-width: 320px; text-align: center;">
+        <div style="width: 100%; height: 320px; background: rgba(255, 255, 255, 0.03); border: 2px dashed var(--border); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-dim);">
+          <span style="font-size: 3rem; margin-bottom: 10px;">🎮</span>
+          <span style="font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Foto em breve</span>
+        </div>
+      </div>
+
+      <!-- Detalhes do Jogador -->
+      <div style="flex: 2; min-width: 280px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+          <img src="OsTemplarios.png" alt="Os Templários" style="height: 35px;" onerror="this.src='OsTemplarios.jpg'">
+          <span style="color: var(--cream); font-weight: 800; text-transform: uppercase;">Os Templários</span>
+        </div>
+
+        <h1 style="font-size: 2.8rem; font-weight: 900; color: var(--cream); text-transform: uppercase; margin-bottom: 10px;">MigiTilted</h1>
+        <p style="color: var(--text-dim); margin-bottom: 20px;">Atleta de Pokémon GO e Streamer a representar Os Templários.</p>
+
+        <!-- Twitch -->
+        <div style="margin-bottom: 25px;">
+          <a href="https://www.twitch.tv/migitilted" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background: #9146FF; color: white; text-decoration: none; padding: 10px 18px; border-radius: 6px; font-weight: 800; font-size: 0.9rem; transition: transform 0.2s, opacity 0.2s;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.571zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>
+            Acompanha na Twitch
+          </a>
+        </div>
+
+        <!-- Palmarés Individual -->
+        <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--gold); border-bottom: 2px solid var(--gold); padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase;">🏆 Palmarés Individual</h3>
+        
+        <p style="color: var(--text-dim); font-style: italic;">Informação de conquistas em atualização.</p>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>© Os Navegadores — Pokémon GO Portugal</footer>
+</body>
+</html>
